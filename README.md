@@ -40,7 +40,7 @@ Enable font-smoothing.
 
 Disable font-smoothing.
 
-## Sass placeholder
+## Sass placeholders
 
 Same as classes.
 
