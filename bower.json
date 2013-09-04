@@ -1,0 +1,30 @@
+{
+  "name": "css-recipe-font-smoothing",
+  "version": "0.1.0",
+  "homepage": "https://github.com/css-recipes/font-smoothing",
+  "authors": [{
+    "name": "\"MoOx\" Maxime Thirouin",
+    "web": "http://moox.io"
+  }],
+  "keywords": [
+    "css-recipes",
+    "css-recipe",
+    "css",
+    "recipes",
+    "recipe",
+    "font",
+    "font-smoothing",
+    "antialias",
+    "antialiased",
+    "subpixel-antialiased",
+    "grayscale"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    ".travis.yml",
+    "Makefile",
+    "tests"
+  ]
+}

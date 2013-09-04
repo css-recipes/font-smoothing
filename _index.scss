@@ -1,0 +1,38 @@
+$crp--output: false !default;
+
+@mixin crp-FontSmoothing($value: true) {
+	$webkit-value: $value;
+	$moz-value: $value;
+		
+	@if ($value == true or $value == on or $value == antialiased or $value == grayscale ) {
+		$webkit-value: antialiased;
+		$moz-value: grayscale;
+	}
+	@else if ($value == false or $value == off or $value == "subpixel-antialiased" or $value == auto ) {
+		$webkit-value: subpixel-antialiased;
+		$moz-value: auto;
+	}
+	
+	-webkit-font-smoothing: $webkit-value;
+	-moz-osx-font-smoothing: $moz-value;
+}
+
+%crp-FontSmoothing,
+%crp-FontSmoothing--on {
+	@include crp-FontSmoothing(true);
+}
+
+%crp-FontSmoothing--off {
+	@include crp-FontSmoothing(false);
+}
+
+@if ($crp--output) {
+	.crp-FontSmoothing,
+	.crp-FontSmoothing--on {
+		@extend %crp-FontSmoothing;
+	}
+	
+	.crp-FontSmoothing--off {
+		@extend %crp-FontSmoothing--off;
+	}
+}

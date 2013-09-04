@@ -1,0 +1,8 @@
+.crp-FontSmoothing,
+.crp-FontSmoothing--on {
+  -webkit-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; }
+
+.crp-FontSmoothing--off {
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: auto; }
