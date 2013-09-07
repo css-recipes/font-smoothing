@@ -76,7 +76,7 @@ _This recipes requires Sass `~3.2.0` or libsass `~0.?`_
 Before importing the file, you can eventually enable css classes like this:
 
 ```sass
-$crp-classes: true
+$crp--output: true
 @import "css-recipe-font-smoothing/index";
 ```
 
@@ -96,4 +96,4 @@ Just remember that placeholders should be available as well.
 
 ---
 
-Recipe submitted by ["MoOx" Maxime Thirouin](http://moox.io)
+Recipe submitted by [@MoOx Maxime Thirouin](http://moox.io)

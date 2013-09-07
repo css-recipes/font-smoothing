@@ -1,6 +1,7 @@
  define ensure_no_output_by_default
     if [ -z "`sass tests/no-output.scss`" ]; \
     then \
+        echo "✔ '@import \"index\";' don't output anything."; \
         exit 0; \
     else \
         echo "✗ '@import \"index\";' should output anything by default."; \
